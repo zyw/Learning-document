@@ -65,7 +65,7 @@ security:
 
 启动应用程序后，会看到如下一系列的 `Mappings`
 
-​	![1546931233163](F:\markdown文档\assets\1546931233163.png)
+​	![1546931233163](assets/1546931233163.png)
 
 然后，编写配置文件 `prometheus.yml`
 
@@ -86,7 +86,7 @@ scrape_configs:
 
 最后，访问Prometheus地址端口 , 检查 Spring Boot 采集状态是否正常。
 
-![1546931477282](F:\markdown文档\assets\1546931477282.png)
+![1546931477282](assets/1546931477282.png)
 
 # Grafana 可视化监控数据配置
 
@@ -94,21 +94,21 @@ scrape_configs:
 
 1、配置单个指标的可视化监控面板：
 
-![img](F:\markdown文档\assets\3424642-7716afba5950b709.webp)
+![img](assets/3424642-7716afba5950b709.webp)
 
 
 
-![img](F:\markdown文档\assets\3424642-e3d0363d4536f424.webp)
+![img](assets/3424642-e3d0363d4536f424.webp)
 
-![img](F:\markdown文档\assets\3424642-010ac34b85c13ede.webp)
+![img](assets/3424642-010ac34b85c13ede.webp)
 
 > 提示，此处不能任意填写，只能填已有的指标点，具体的可以在 Prometheus 的首页看到，即 [http://localhost:9090/graph](https://link.jianshu.com/?t=http://localhost:9090/graph)
 
-![img](F:\markdown文档\assets\3424642-cbded1e5761d0b1d.webp)
+![img](assets/3424642-cbded1e5761d0b1d.webp)
 
 多配置几个指标之后，即可有如下效果：
 
-![1546931863182](F:\markdown文档\assets\1546931863182.png)
+![1546931863182](assets/1546931863182.png)
 
 参考网站
 

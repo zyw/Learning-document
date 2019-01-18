@@ -17,6 +17,6 @@ nohup java -jar /mnt/vehicle-lane-simulation-0.0.1-SNAPSHOT.jar > nohup.log 2>&1
 
 ## idea 配置
 
-![1546583061397](F:\markdown文档\assets\1546583061397.png)
+![1546583061397](assets/1546583061397.png)
 
-![1546583183076](F:\markdown文档\assets\1546583183076.png)
+![1546583183076](assets/1546583183076.png)

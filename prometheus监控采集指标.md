@@ -37,7 +37,7 @@
 
 标准格式为 <metric name>{<label name>=<label value>,...}，如下图：
 
-![1547195655360](F:\markdown文档\prometheus监控采集指标.assets\1547195655360.png)
+![1547195655360](prometheus监控采集指标.assets/1547195655360.png)
 
 jvm的采集数据：
 
@@ -147,7 +147,7 @@ rpc_invoke_cnt_c{code="0",method="Tracker.Tracker.Get",job="Center"} 70
 rate(rpc_invoke_cnt_c{method="Relation.GetUserInfo",job="Center"}[1m])
 ```
 
-![img](F:\markdown文档\prometheus监控采集指标.assets\640.jpg)
+![img](prometheus监控采集指标.assets/640.jpg)
 
 或者基于方法和错误码统计Center的整体RPC请求错误频率：
 
@@ -155,7 +155,7 @@ rate(rpc_invoke_cnt_c{method="Relation.GetUserInfo",job="Center"}[1m])
 sum by (method, code)(rate(rpc_invoke_cnt_c{job="Center",code!="0"}[1m]))
 ```
 
-![img](F:\markdown文档\prometheus监控采集指标.assets\641.jpg)
+![img](prometheus监控采集指标.assets/641.jpg)
 
 如果我们想统计Center各方法的接口耗时，使用如下Query语句即可：
 
@@ -163,7 +163,7 @@ sum by (method, code)(rate(rpc_invoke_cnt_c{job="Center",code!="0"}[1m]))
 rate(rpc_invoke_time_h_sum{job="Center"}[1m]) / rate(rpc_invoke_time_h_count{job="Center"}[1m])
 ```
 
-![img](F:\markdown文档\prometheus监控采集指标.assets\642.jpg)
+![img](prometheus监控采集指标.assets/642.jpg)
 
 ## 参考和总结
 
