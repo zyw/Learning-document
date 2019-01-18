@@ -4,7 +4,7 @@
 
 ### 事件传递对象（ApplicationEvent）
 
-![ApplicationEnvironmentPreparedEvent](Spring事件(1)-事件框架.assets\ApplicationEnvironmentPreparedEvent.png)
+![ApplicationEnvironmentPreparedEvent](springevent1.assets/ApplicationEnvironmentPreparedEvent.png)
 
 `ApplicationEvent`是事件接口，继承自`EventObject`(Java规范要求事件对象都需要继承该类)。
 
@@ -15,7 +15,7 @@
 
 ### 事件监听（ApplicationListener）
 
-![MultiServerUserRegistry](Spring事件(1)-事件框架.assets\MultiServerUserRegistry.png)
+![MultiServerUserRegistry](springevent1.assets/MultiServerUserRegistry.png)
 
 `ApplicationListener`是Spring的事件监听接口，实现了jdk中的`EventListener`，该接口只提供了一个抽象方法`void onApplicationEvent(E event)`用于处理接收到的事件。
 
@@ -27,7 +27,7 @@
 
 #### ApplicationEventPublisher
 
-![AbstractApplicationContext](Spring事件(1)-事件框架.assets\AbstractApplicationContext.png)
+![AbstractApplicationContext](springevent1.assets/AbstractApplicationContext.png)
 
 `ApplicationEventPublisher`事件发布接口，`ApplicationContext`接口继承了该接口，这也就说明Spring Framework的核心`IoC`容器都具有发布事件的能力，接口方法在`AbstractApplicationContext`中实现，来看一下实现代码：
 
@@ -82,7 +82,7 @@ protected void publishEvent(Object event, @Nullable ResolvableType eventType) {
 
 #### ApplicationEventMulticaster
 
-![SimpleApplicationEventMulticaster](Spring事件(1)-事件框架.assets\SimpleApplicationEventMulticaster.png)
+![SimpleApplicationEventMulticaster](springevent1.assets/SimpleApplicationEventMulticaster.png)
 
 `ApplicationEventMulticaster`接口有一个抽象实现和一个简单实现，通过查看`ApplicationEventMulticaster`接口规范我们会发现改接口提供注册`Listener`和通知`Listener`的接口契约。
 
