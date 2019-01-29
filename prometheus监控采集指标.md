@@ -181,6 +181,8 @@ rate(rpc_invoke_time_h_sum{job="Center"}[1m]) / rate(rpc_invoke_time_h_count{job
 2. 每秒错误数量（Errors）；
 3. 服务响应时间（Duration）。
 
+不难发现， USE 原则主要关注的是“资源”，比如节点和容器的资源使用情况，而 RED 原则主要关注的是“服务”。
+
 ## 参考和总结
 
 https://mp.weixin.qq.com/s/lcjZzjptxrUBN1999k_rXw
