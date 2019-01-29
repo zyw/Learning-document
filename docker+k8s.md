@@ -2,7 +2,7 @@
 
 ### 容器兴起
 
-* 容器技术的兴起源于 PaaS 技术的普及；
+* 容器技术的兴起源于`PaaS` 技术的普及；
 * Docker 公司发布的 Docker 项目具有里程碑式的意义;
 * Docker 项目通过“容器镜像”，解决了应用打包这个根本性难题。
 
@@ -53,6 +53,8 @@ int pid = clone(main_function, stack_size, CLONE_NEWPID | SIGCHLD, NULL);
 ![img](docker+k8s.assets/8089934bedd326703bf5fa6cf70f9740.png)
 
 ![img](docker+k8s.assets/9f973d5d0faab7c6361b2b67800d0e59.jpg)
+
+如果想了解更多可以查看[耗子叔](https://coolshell.cn/articles/17010.html)的文章
 
 #### Linux的Cgroups
 

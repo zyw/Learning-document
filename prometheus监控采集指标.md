@@ -165,6 +165,22 @@ rate(rpc_invoke_time_h_sum{job="Center"}[1m]) / rate(rpc_invoke_time_h_count{job
 
 ![img](prometheus监控采集指标.assets/642.jpg)
 
+## 业界监控原则
+
+在具体的监控指标规划上应遵循业界通用的 USE 原则和 RED 原则。
+
+其中，USE 原则指的是，按照如下三个维度来规划资源监控指标：
+
+1. 利用率（Utilization），资源被有效利用起来提供服务的平均时间占比；
+2. 饱和度（Saturation），资源拥挤的程度，比如工作队列的长度；
+3. 错误率（Errors），错误的数量。
+
+而 RED 原则指的是，按照如下三个维度来规划服务监控指标：
+
+1. 每秒请求数量（Rate）；
+2. 每秒错误数量（Errors）；
+3. 服务响应时间（Duration）。
+
 ## 参考和总结
 
 https://mp.weixin.qq.com/s/lcjZzjptxrUBN1999k_rXw
